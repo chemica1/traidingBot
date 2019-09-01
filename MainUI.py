@@ -1,13 +1,16 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 from PyQt5.QtCore import Qt
-
+import numpy as np
 
 class MyApp(QWidget):
 
     def __init__(self):
         super().__init__()
-
+        A=np.array([[1,2],[3,4]])
+        B=np.array([[1,4],[7,8]])
+        C=np.dot(A,B)
+        print("행렬A와 행렬B의 곱은",C,"입니다.")
         self.initUI()
 
     def initUI(self):
@@ -44,3 +47,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = MyApp()
     sys.exit(app.exec_())
+
+
