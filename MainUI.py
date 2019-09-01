@@ -12,10 +12,10 @@ class MyApp(QWidget):
 
     def initUI(self):
 
-        label1 = QLabel('조국딸년 입시비리로 고대감', self)
+        label1 = QLabel("누군가 '조국'의 미래를 묻거든", self)
         label1.setAlignment(Qt.AlignCenter)
 
-        label2 = QLabel('made by 멸치와 헬창', self)
+        label2 = QLabel('고래를 들어 관악을 보게하라', self)
         label2.setAlignment(Qt.AlignVCenter)
 
         font1 = label1.font()
