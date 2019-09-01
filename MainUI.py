@@ -7,15 +7,13 @@ class MyApp(QWidget):
 
     def __init__(self):
         super().__init__()
-        A=np.array([[1,2],[3,4]])
-        B=np.array([[1,4],[7,8]])
-        C=np.dot(A,B)
-        print("행렬A와 행렬B의 곱은",C,"입니다.")
+        self.A=np.array([[1,2],[3,4]])
+        self.B=np.array([[1,4],[7,8]])
         self.initUI()
 
     def initUI(self):
 
-        label1 = QLabel("누군가 '조국'의 미래를 묻거든", self)
+        label1 = QLabel(f"{np.dot(self.A,self.B)}", self)
         label1.setAlignment(Qt.AlignCenter)
 
         label2 = QLabel('고래를 들어 관악을 보게하라', self)
