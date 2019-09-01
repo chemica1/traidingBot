@@ -12,7 +12,7 @@ class MyApp(QWidget):
 
     def initUI(self):
 
-        label1 = QLabel('우리봇 초창기UI', self)
+        label1 = QLabel('문재인 함박도 해명하라', self)
         label1.setAlignment(Qt.AlignCenter)
 
         label2 = QLabel('made by 멸치와 헬창', self)
