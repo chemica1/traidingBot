@@ -35,7 +35,7 @@ class CircularQueue():
 
 if __name__ == '__main__':
     cq = CircularQueue()
-    cq.dispaly()
+    cq.display()
     print(cq.enqueu())
     print(cq.enqueu())
     print(cq.enqueu())
